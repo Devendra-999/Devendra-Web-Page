@@ -1,5 +1,5 @@
-FROM tomcat:latest
-MAINTAINER devendragudelli999@gmail
+FROM tomcat:8.0-jre8
+MAINTAINER  DevendraGudelli devendragudelli999@gmail
 COPY target/*.war /usr/local/tomcat/webapps/maven-web-project-1.0-SNAPSHOT.war
-EXPOSE 8091
+EXPOSE 8080
 CMD ["catalina.sh", "run"]
